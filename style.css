@@ -42,6 +42,10 @@ h4 {
 	padding: 0.5% 5%;
 }
 
+.scrollArrow {
+	float: right;
+}
+
 .sectionContent {
 	margin: 0 auto;
 }
@@ -272,15 +276,72 @@ h4 {
 	color: #ffffff;
 }
 
-#localizationHeading h2, #localizationHeading h4{
-	height: 100%;
+#localizationSideContent h2, #localizationSideContent h4{
 	color: #ffffff !important;
 }
 
+#localization .sectionContent {
+	display: flex;
+}
+
+#localizationSideContent {
+	width: 100%;
+}
+
+#localizationMainContent > img {
+	padding: 10px;
+	border: 1px solid #ffffff;
+	margin: 4% 0 8% 0;
+	width: 100%;
+}
+
+#localizationMainContent {
+	width: 100%;
+	display: flex;
+}
+
+#LocalizationsList {
+	margin: 4% 0 8% 0;
+	height: 100%;
+	width: 100%;
+	margin-left: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+#LocalizationsList > :first-child {
+	border-top: 1px solid #ffffff;
+}
+
+.listItem {
+	position: relative;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: #ffffff;
+	font-size: 11px;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: #ffffff;
+	font-family: "Roboto";
+	font-weight: 300;
+}
+
+.listItem div {
+	margin: 7% 0 7% 0;
+}
+
+.listItem img {
+	vertical-align: text-top;
+}
+
+/*
 #localizationContent {
 	display: flex;
-	justify-content: space-around;
-
+	justify-content: center;
+	max-height: 100%;
+	overflow: hidden;
 }
 
 #localizationContent > div{
@@ -292,12 +353,14 @@ h4 {
 	padding: 10px;
 	border: 1px solid #ffffff;
 	width: 75%;
-	margin-right: 8%;
 }
 
 #LocalizationsList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 50%;
-	max-height: 5%;
+	max-height: 100%;
 }
 
 #LocalizationsList > :first-child {
@@ -305,10 +368,10 @@ h4 {
 }
 
 .listItem {
+	position: relative;
 	border-width: 0 0 1px 0;
 	border-style: solid;
 	border-color: #ffffff;
-	
 	font-size: 11px;
 	letter-spacing: 1px;
 	line-height: 17px;
@@ -319,18 +382,12 @@ h4 {
 
 .listItem div {
 	margin: 7% 0 7% 0;
-	vertical-align: top;
 }
 
 .listItem img {
 	vertical-align: text-top;
 }
-
-.listItem span {
-	word-wrap: break-word;
-}
-
-
+*/
  /*Contact section styles*/
 
 #contact {

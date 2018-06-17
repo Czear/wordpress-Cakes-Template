@@ -108,68 +108,59 @@
 
             <section id="localization">
                 <div class="sectionContent">
-                    <div id="localizationHeading">
+                    <div id="localizationSideContent">
                         <h2>Nasze</h2>
                         <h4>Lokale</h4>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
+                        <img class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_up.png" alt="arrow UP">
+                            <div id="localizationMainContent"> 
+                                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/map.png" alt="map">            
+                                        <div id="LocalizationsList">
+                                            <div class="listItem">
+                                                <div class="resteurantLocalization">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                    <span>Placeholder localization</span>
+                                                </div>
+                                                <div class="resteurantContact">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                    <span>Placeholder adress</span>
+                                                </div>
+                                            </div>
+                                            <div class="listItem">
+                                                <div class="resteurantLocalization">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                    <span>Placeholder localization</span>
+                                                </div>
+                                                <div class="resteurantContact">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                    <span>Placeholder adress</span>
+                                                </div>
+                                            </div> <div class="listItem">
+                                                <div class="resteurantLocalization">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                    <span>Placeholder localization</span>
+                                                </div>
+                                                <div class="resteurantContact">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                    <span>Placeholder adress</span>
+                                                </div>
+                                            </div> <div class="listItem">
+                                                <div class="resteurantLocalization">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                    <span>Placeholder localization</span>
+                                                </div>
+                                                <div class="resteurantContact">
+                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                    <span>Placeholder adress</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_down.png" alt="arrow Down">
+                                </div>
+                            </div>
                     </div>
 
-                    <div id="localizationContent">
-                        <div id="localizationSidePhoto">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/map.png" alt="map">
-                        </div>
-                
-                        <div id="LocalizationsList">
-							<div class="listItem">
-								<div class="resteurantLocalization">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                    <span>Placeholder localization</span>
-								</div>
-								<div class="resteurantContact">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-									<span>Placeholder adress</span>
-								</div>
-                            </div><div class="listItem">
-								<div class="resteurantLocalization">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                    <span>Placeholder localization</span>
-								</div>
-								<div class="resteurantContact">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-									<span>Placeholder adress</span>
-								</div>
-                            </div><div class="listItem">
-								<div class="resteurantLocalization">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                    <span>Placeholder localization</span>
-								</div>
-								<div class="resteurantContact">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-									<span>Placeholder adress</span>
-								</div>
-                            </div>
-                            <div class="listItem">
-								<div class="resteurantLocalization">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-									<span>Placeholder localization</span>
-								</div>
-								<div class="resteurantContact">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-									<span>Placeholder adress</span>
-								</div>
-                            </div>
-                            <div class="listItem">
-								<div class="resteurantLocalization">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-									<span>Placeholder localization</span>
-								</div>
-								<div class="resteurantContact">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-									<span>Placeholder adress</span>
-								</div>
-							</div>
-                        </div>
-                    </div>
                 </div>
             </section>
             <section id="contact">
@@ -188,3 +179,28 @@
     </body>
     <script src="<?php echo get_bloginfo('template_directory') .'/script.js'; ?>"></script>
 </html>
+
+<!--
+
+<div class="listItem">
+								<div class="resteurantLocalization">
+									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                    <span>Placeholder localization</span>
+								</div>
+								<div class="resteurantContact">
+									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+									<span>Placeholder adress</span>
+								</div>
+                            </div>
+                            <div class="listItem">
+								<div class="resteurantLocalization">
+									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                    <span>Placeholder localization</span>
+								</div>
+								<div class="resteurantContact">
+									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+									<span>Placeholder adress</span>
+								</div>
+                            </div>
+
+                            -->

@@ -167,7 +167,7 @@ h4 {
 
 #offerContent {
 	margin: 0 auto;
-	width: 60%;
+	width: 70%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -177,6 +177,10 @@ h4 {
 	margin-bottom: 15%;
 	text-align: center;
 	width: 25%;
+}
+
+#offerContent figure img {
+	max-width: 100%;
 }
 
 #offerContent figure h6 {
@@ -237,7 +241,7 @@ h4 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around
+	justify-content: space-around;
 	
 }
 

@@ -21,6 +21,7 @@
         </nav>
             <header>
                 <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/main_photo.png" alt="main photo">
+                <div class="teeths upTeeths"></div>
             </header>
         <main>
             <section id="news">
@@ -34,9 +35,7 @@
                     <div id="newsContent">
                         <img id="newsSidePhoto" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/news_photo.png" alt="side photo">
                         <article id="newsArticle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut placerat mi, laoreet laoreet justo. 
-                        Morbi sem augue, fermentum at efficitur commodo, sollicitudin ac augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut placerat mi, laoreet laoreet justo. 
-                        Morbi sem augue, fermentum at efficitur commodo, sollicitudin ac augue.
+                            
                         </article>
                     </div>  
                     <footer id="newsPagination">
@@ -46,8 +45,8 @@
                     </footer> 
                 </div>                    
             </section>
-
             <section id="offer">
+            <div class="teeths downTeeths"></div>
                 <div class="sectionContent">
                     <div id="offerHeading">
                         <h2>Nasza</h2>
@@ -77,7 +76,7 @@
                     </footer>
                 </div>
             </section>
-
+        <div class="teeths upTeeths galeryTeeths"></div>
             <section id="galery">
                 <div class="sectionContent">
                     <div id="galeryHeading">
@@ -105,8 +104,8 @@
                     </footer> 
                 </div>
             </section>
-
             <section id="localization">
+        <div class="teeths downTeeths"></div>
                 <div class="sectionContent">
                     <div id="localizationSideContent">
                         <h2>Nasze</h2>
@@ -135,16 +134,8 @@
                                                     <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
                                                     <span>Placeholder adress</span>
                                                 </div>
-                                            </div> <div class="listItem">
-                                                <div class="resteurantLocalization">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                                    <span>Placeholder localization</span>
-                                                </div>
-                                                <div class="resteurantContact">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-                                                    <span>Placeholder adress</span>
-                                                </div>
-                                            </div> <div class="listItem">
+                                            </div> 
+                                            <div class="listItem">
                                                 <div class="resteurantLocalization">
                                                     <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
                                                     <span>Placeholder localization</span>
@@ -154,14 +145,14 @@
                                                     <span>Placeholder adress</span>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                     </div>
-                                    <img class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_down.png" alt="arrow Down">
-                                </div>
+                                  <img id="lowerArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_down.png" alt="arrow Down">
+                               </div>
                             </div>
                     </div>
-
-                </div>
+             </div>
             </section>
             <section id="contact">
                 <div class="sectionContent">
@@ -179,28 +170,3 @@
     </body>
     <script src="<?php echo get_bloginfo('template_directory') .'/script.js'; ?>"></script>
 </html>
-
-<!--
-
-<div class="listItem">
-								<div class="resteurantLocalization">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                    <span>Placeholder localization</span>
-								</div>
-								<div class="resteurantContact">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-									<span>Placeholder adress</span>
-								</div>
-                            </div>
-                            <div class="listItem">
-								<div class="resteurantLocalization">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                    <span>Placeholder localization</span>
-								</div>
-								<div class="resteurantContact">
-									<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-									<span>Placeholder adress</span>
-								</div>
-                            </div>
-
-                            -->

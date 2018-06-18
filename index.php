@@ -81,8 +81,63 @@
                             <h2>Ciasta</h2>
                             <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
                         </div>
-                    <div id="offerContent">
-                            
+                    <div id="secondOfferContent">
+                        <div id="secondOfferContentContainer">
+                            <div class='singleProduct'>
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_0.png"?>" alt="cake">
+                                    <div>
+                                        <h6>Name</h6>
+                                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3m</article>
+                                        <p>Cena: 23zl/ kg</p>
+                                    </div>
+                            </div>
+                            <div class='singleProduct'>
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_1.png"?>" alt="cake">
+                                    <div>
+                                        <h6>Name</h6>
+                                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
+                                        <p>Cena: 23zl/ kg</p>
+                                    </div>
+                            </div>
+                            <div class='singleProduct'>
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_2.png"?>" alt="cake">
+                                    <div>
+                                        <h6>Name</h6>
+                                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
+                                        <p>Cena: 23zl/ kg</p>
+                                    </div>
+                            </div>
+                            <div class='singleProduct'>
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_3.png"?>" alt="cake">
+                                    <div>
+                                        <h6>Name</h6>
+                                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
+                                        <p>Cena: 23zl/ kg</p>
+                                    </div>
+                            </div>
+                            <div class='singleProduct'>
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_4.png"?>" alt="cake">
+                                    <div>
+                                        <h6>Name</h6>
+                                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
+                                        <p>Cena: 23zl/ kg</p>
+                                    </div>
+                            </div>
+                            <div class='singleProduct'>
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_5.png"?>" alt="cake">
+                                    <div>
+                                        <h6>Name</h6>
+                                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
+                                        <p>Cena: 23zl/ kg</p>
+                                    </div>
+                            </div>
+                    
+                        </div>
+                        <footer>
+                            <div class="active">1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </footer>
                     </div>
                 </div>
             </section>

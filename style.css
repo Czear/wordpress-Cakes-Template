@@ -209,6 +209,7 @@ h4 {
 
 #offerContent figure img {
 	max-width: 100%;
+	cursor: pointer;
 }
 
 
@@ -221,9 +222,6 @@ h4 {
 	font-weight: 800;
 }
 
-#fristChoiceMenu {
-	display: none;
-}
 
 #firstChoiceMenu footer {
 	font-size: 60px;
@@ -254,6 +252,88 @@ h4 {
 #secondChoiceMenu h2 {
 	color:#38281B;
 }
+
+#secondOfferContentContainer {
+	padding: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.singleProduct h6{
+	margin: 0 0 5px 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 29px;
+	color: #3A3A3A;
+	font-family: "Roboto";
+	font-weight: 800;
+}
+
+.singleProduct {
+	margin-top: 55px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	width: 40%;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: #3A3A3A;
+	font-family: "Roboto";
+	font-weight: 300;
+}
+
+.singleProduct img {
+	display: inline-block;
+}
+
+.singleProduct div {
+	display: inline-block;
+	width: 50%;
+	margin-left: 10px;
+}
+
+.singleProduct article {
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: rgb(58,58,58);
+	font-family: "Roboto";
+	font-weight: 300;
+}
+
+.singleProduct p {
+	width: 204px;
+	height: 30px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 17px;
+	color: rgb(195,19,38);
+	font-family: "Roboto";
+}
+#secondOfferContent footer{
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#secondOfferContent footer div{
+	border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background: #cfcfcf;
+    border: 2px solid #cfcfcf;
+    color: #ffffff;    
+	font: 15px Arial, sans-serif;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
 
  /* Galery section styles*/
 

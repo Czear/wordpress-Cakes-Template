@@ -48,6 +48,12 @@ window.onload = function() {
             document.getElementById('offer').style.backgroundImage = 'none';
         }
     });
+
+    document.getElementById('secondOfferContentContainer').addEventListener("click", (event) => {
+        if (event.target.tagName === "IMG") {
+            openModal(event.target);
+        }
+    });
 // Funtions
 
     function setNewsPage(eventTarget) {

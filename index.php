@@ -39,20 +39,21 @@
                         </article>
                     </div>  
                     <footer id="newsPagination">
-                                <div class="active">1</div>
+                                <div id="newsPaginationStartingPage">1</div>
                                 <div>2</div>
                                 <div>3</div>
                     </footer> 
                 </div>                    
             </section>
+
             <section id="offer">
-            <div class="teeths downTeeths"></div>
-                <div class="sectionContent">
-                    <div id="offerHeading">
-                        <h2>Nasza</h2>
-                        <h4>Oferta</h4>
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
-                    </div>
+                <div class="teeths downTeeths"></div>
+                    <div id="firstChoiceMenu" class="sectionContent">
+                        <div id="offerHeading">
+                            <h2>Nasza</h2>
+                            <h4>Oferta</h4>
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
+                        </div>
                     <div id="offerContent">
                         <figure id="pieIcon">
                             <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/pie_ico.png"; ?>" alt="pie icon">
@@ -70,10 +71,19 @@
                             <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/icecream_ico.png"; ?>" alt="icecream icon">
                             <h6>LODY</h6>
                         </figure>
+                        <footer>
+                            Smacznego!
+                        </footer>
                     </div>
-                    <footer>
-                        Smacznego!
-                    </footer>
+                </div>
+                <div id="secondChoiceMenu" class="sectionContent">
+                        <div id="offerHeading">
+                            <h2>Ciasta</h2>
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
+                        </div>
+                    <div id="offerContent">
+                            
+                    </div>
                 </div>
             </section>
         <div class="teeths upTeeths galeryTeeths"></div>
@@ -92,13 +102,27 @@
                         </ul>
                     </nav>
                     <div id="galeryImages">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_0.png" alt="icecream">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_1.png" alt="icecream">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_2.png" alt="icecream">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_3.png" alt="icecream">
+                        <div class="imagesBunch">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_0.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_1.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_2.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_3.png" alt="icecream">
+                        </div>
+                        <div class="imagesBunch">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_0.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_1.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_2.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_3.png" alt="icecream">
+                        </div>
+                        <div class="imagesBunch">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_0.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_1.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_2.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_3.png" alt="icecream">
+                        </div>
                     </div>
                     <footer id="galeryPagination">
-                                <div class="active">1</div>
+                                <div id="galeryPaginationStartingPage">1</div>
                                 <div>2</div>
                                 <div>3</div>
                     </footer> 
@@ -111,41 +135,92 @@
                         <h2>Nasze</h2>
                         <h4>Lokale</h4>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
-                        <img class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_up.png" alt="arrow UP">
+                        <img id="upperArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_up.png" alt="arrow UP">
                             <div id="localizationMainContent"> 
                                 <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/map.png" alt="map">            
                                         <div id="LocalizationsList">
                                             <div class="listItem">
-                                                <div class="resteurantLocalization">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                                    <span>Placeholder localization</span>
-                                                </div>
-                                                <div class="resteurantContact">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-                                                    <span>Placeholder adress</span>
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <span>Placeholder localization 1</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <span>Placeholder adress 1</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="listItem">
-                                                <div class="resteurantLocalization">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                                    <span>Placeholder localization</span>
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <span>Placeholder localization 2</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <span>Placeholder adress 2</span>
+                                                    </div>
                                                 </div>
-                                                <div class="resteurantContact">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-                                                    <span>Placeholder adress</span>
+                                            </div> <div class="listItem">
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <span>Placeholder localization 3</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <span>Placeholder adress 3</span>
+                                                    </div>
                                                 </div>
-                                            </div> 
-                                            <div class="listItem">
-                                                <div class="resteurantLocalization">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
-                                                    <span>Placeholder localization</span>
-                                                </div>
-                                                <div class="resteurantContact">
-                                                    <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
-                                                    <span>Placeholder adress</span>
+                                            </div> <div class="listItem">
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <span>Placeholder localization 4</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <span>Placeholder adress 4</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            
+                                            <div class="listItem">
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <span>Placeholder localization 5</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <span>Placeholder adress 5</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="listItem">
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <span>Placeholder localization 6</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <span>Placeholder adress 6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="listItem">
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <span>Placeholder localization 7</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <span>Placeholder adress 7</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                   <img id="lowerArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_down.png" alt="arrow Down">
@@ -160,13 +235,18 @@
                     <p>Telefon <strong>517 101 671</strong></p>
                     <p>Godziny otwarcia <strong>08:00-21:00</strong></p>
                     <p>cukiernia@osterialimoni.pl</p>
-                    <!--<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/footer_icecream_background.png" alt="icecreams">--> 
                 </div>
             </section>
         </main>
         <footer id="mainFooter">
             Created By <strong>Cezary Wakuliński</strong>
         <footer>
+            <div id="modal">
+                <span id="modalClose">X</span>
+                    <div id="modalContent">
+                        
+                    </div>
+            </div>
     </body>
     <script src="<?php echo get_bloginfo('template_directory') .'/script.js'; ?>"></script>
 </html>

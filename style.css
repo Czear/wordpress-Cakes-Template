@@ -154,6 +154,7 @@ h4 {
     color: #ffffff;    
 	font: 20px Arial, sans-serif;
 	margin-left: 15px;
+	cursor: pointer;
 }
 
 #newsSidePhoto{
@@ -161,7 +162,7 @@ h4 {
 	border: 1px solid #000000;
 	margin-right: 8%;
 	width: 50%;
-	max-height: 380px;
+	max-height: 340px;
 }
 
 #newsArticle {
@@ -179,6 +180,7 @@ h4 {
 
  /* Offer section styles*/
 
+
 #offer {
 	width: 100%;
 	background-image: url(./assets/images/news_background.png);
@@ -186,9 +188,9 @@ h4 {
 	padding: 5% 0 5% 0;
 }
 
-#offerHeading h2, #offerHeading h4{
+#offerHeading h2, #offerHeading h4{ 
 	height: 100%;
-	color: #ffffff !important;
+	color: #ffffff;
 }
 
 #offerContent {
@@ -219,13 +221,38 @@ h4 {
 	font-weight: 800;
 }
 
-#offer footer {
+#fristChoiceMenu {
+	display: none;
+}
+
+#firstChoiceMenu footer {
 	font-size: 60px;
 	letter-spacing: 4px;
 	line-height: 29px;
 	color: #ffffff;
 	font-family: "Great Vibes";
 	text-align: center;
+}
+
+/* Second Choice menu styles */
+
+#secondChoiceMenu {
+	display: none;
+}
+
+#secondChoiceMenu #offerHeading {
+	display: flex;
+	flex-direction: column;
+}
+
+#secondChoiceMenu #offerHeading img {
+	width: 80px;
+	height: 5px;
+	margin-left: 26px;
+}
+
+#secondChoiceMenu h2 {
+	color:#38281B;
 }
 
  /* Galery section styles*/
@@ -264,17 +291,24 @@ h4 {
 }
 
 #galeryImages {
-	margin-top: 5%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	
+	margin: 2%;
+	max-height: 600px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.imagesBunch {
+	display: inline-block;
+	height: 600px;
 }
 
 #galeryImages img {
-	width: 40%;
-	margin-bottom: 5%;
+	display: inline-block;
+	width: 45%;
+	height: 45.5%;
+	margin: 2% calc(2.5% - 5px) calc(5% - 5px) 2.5%;
+	margin-bottom: 5px;
+	cursor: pointer;
 }
 
 #galeryPagination {
@@ -295,6 +329,7 @@ h4 {
     color: #ffffff;    
 	font: 13px Arial, sans-serif;
 	margin-left: 15px;
+	cursor: pointer;
 }
 
  /* Localization section styles*/
@@ -313,6 +348,7 @@ h4 {
 
 #localization .sectionContent {
 	display: flex;
+	padding-bottom: 10%;
 }
 
 #localizationSideContent {
@@ -324,21 +360,25 @@ h4 {
 	padding: 10px;
 	border: 1px solid #ffffff;
 	margin: 4% 0 8% 0;
-	width: 100%;
-	width: auto;
-	height: 330px;
+	width: 50%;
+	height: 50%;
+	max-height: 400px;
 }
 
 #localizationMainContent {
 	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 #LocalizationsList {
-	height: 330px;
+	scroll-behavior: smooth;
+	position: relative;
 	margin: 4% 0 8% 0;
-	height: 100%;
-	width: 100%;
+	height: 400px;
+	width: 50%;
+	max-width: 400px;
 	margin-left: 10%;
 	overflow: hidden;
 }
@@ -349,7 +389,9 @@ h4 {
 }
 
 .listItem {
-	position: relative;
+	width: 100%;
+	height: 33%;
+	display: inline-block;
 	border-width: 0 0 1px 0;
 	border-style: solid;
 	border-color: #ffffff;
@@ -361,13 +403,25 @@ h4 {
 	font-weight: 300;
 }
 
-.listItem div {
-	margin: 7% 0 7% 0;
+.listItem > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.listItem > div div{
+	margin: 10% 0 0 0;
 }
 
 .listItem img {
 	vertical-align: text-top;
 }
+
+.scrollArrow {
+	cursor: pointer;
+}
+
+/*Contact styles*/
 
 #contact {
 	padding: 4% 0 4% 0;
@@ -413,4 +467,39 @@ h4 {
 
 #mainFooter strong {
 	color: #eeeeee;
+}
+
+/* Modal styles */
+
+#modal {
+	display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+	background-color: rgb(00, 00, 00, 0.3); 
+}
+
+#modal span {
+	position: fixed;
+	color: #ffffff;
+	top: 0;
+	right: 0;
+	font-size: 4em;
+	margin-right: 2%;
+	cursor: pointer;
+}
+
+#modalContent {
+	display: flex;
+	justify-content: center;
+	opacity: 1;
+	background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
 }

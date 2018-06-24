@@ -3,7 +3,7 @@
     <title>Project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory') . "/style.css"; ?>">
 </head>
 <html>
     <body>
@@ -12,7 +12,7 @@
                 <li>Aktualności</li>
                 <li>Oferta</li>
                     <li id="navLogo">
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/logo.png" alt="Logo">
+                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/logo.png"; ?>" alt="Logo">
                     </li>
                 <li>Galeria</li>
                 <li>Lokale</li>
@@ -20,7 +20,7 @@
             </ul>
         </nav>
             <header>
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/main_photo.png" alt="main photo">
+                <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/main_photo.png"; ?>" alt="main photo">
                 <div class="teeths upTeeths"></div>
             </header>
         <main>
@@ -29,11 +29,11 @@
                     <div id="newsHeading">
                         <h2>Co nowego?</h2>
                         <h4>Aktualności</h4>
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
+                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/italian_flat_flag.png"; ?>" alt="italian Flag">
                     </div>
 
                     <div id="newsContent">
-                        <img id="newsSidePhoto" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/news_photo.png" alt="side photo">
+                        <img id="newsSidePhoto" src="<?php echo get_bloginfo('template_directory') . "/assets/images/news_photo.png"; ?>" alt="side photo">
                         <article id="newsArticle">
                             
                         </article>
@@ -52,7 +52,7 @@
                         <div id="offerHeading">
                             <h2>Nasza</h2>
                             <h4>Oferta</h4>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/italian_flat_flag.png"; ?>" alt="italian Flag">
                         </div>
                     <div id="offerContent">
                         <figure id="pieIcon">
@@ -79,12 +79,12 @@
                 <div id="secondChoiceMenu" class="sectionContent">
                         <div id="offerHeading">
                             <h2>Ciasta</h2>
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/italian_flat_flag.png" ?>; " alt="italian Flag">
                         </div>
                     <div id="secondOfferContent">
                         <div id="secondOfferContentContainer">
                             <div class='singleProduct'>
-                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_0.png"?>" alt="cake">
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_0.png"; ?>" alt="cake">
                                     <div>
                                         <h6>Name</h6>
                                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3m</article>
@@ -92,7 +92,7 @@
                                     </div>
                             </div>
                             <div class='singleProduct'>
-                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_1.png"?>" alt="cake">
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_1.png"; ?>" alt="cake">
                                     <div>
                                         <h6>Name</h6>
                                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
@@ -100,7 +100,7 @@
                                     </div>
                             </div>
                             <div class='singleProduct'>
-                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_2.png"?>" alt="cake">
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_2.png"; ?>" alt="cake">
                                     <div>
                                         <h6>Name</h6>
                                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
@@ -108,7 +108,7 @@
                                     </div>
                             </div>
                             <div class='singleProduct'>
-                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_3.png"?>" alt="cake">
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_3.png"; ?>" alt="cake">
                                     <div>
                                         <h6>Name</h6>
                                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
@@ -116,7 +116,7 @@
                                     </div>
                             </div>
                             <div class='singleProduct'>
-                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_4.png"?>" alt="cake">
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_4.png"; ?>" alt="cake">
                                     <div>
                                         <h6>Name</h6>
                                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
@@ -124,7 +124,7 @@
                                     </div>
                             </div>
                             <div class='singleProduct'>
-                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_5.png"?>" alt="cake">
+                                    <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/cakes/cake_5.png"; ?>" alt="cake">
                                     <div>
                                         <h6>Name</h6>
                                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d copy 3</article>
@@ -147,7 +147,7 @@
                     <div id="galeryHeading">
                         <h2>Cukiernia</h2>
                         <h4>Galeria</h4>
-                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
+                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/italian_flat_flag.png"; ?>" alt="italian Flag">
                     </div>
                     <nav id="galeryNavigation">
                         <ul>
@@ -158,22 +158,22 @@
                     </nav>
                     <div id="galeryImages">
                         <div class="imagesBunch">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_0.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_1.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_2.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_3.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_0.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_1.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_2.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_3.png"; ?>" alt="icecream">
                         </div>
                         <div class="imagesBunch">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_0.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_1.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_2.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_3.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_0.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_1.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_2.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_3.png"; ?>" alt="icecream">
                         </div>
                         <div class="imagesBunch">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_0.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_1.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_2.png" alt="icecream">
-                            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/iceCream_galert_3.png" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_0.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_1.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_2.png"; ?>" alt="icecream">
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/iceCream_galery_3.png"; ?>" alt="icecream">
                         </div>
                     </div>
                     <footer id="galeryPagination">
@@ -197,11 +197,11 @@
                                             <div class="listItem">
                                                 <div>
                                                     <div class="resteurantLocalization">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
                                                         <span>Placeholder localization 1</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?>" alt="phone icon">
                                                         <span>Placeholder adress 1</span>
                                                     </div>
                                                 </div>
@@ -209,33 +209,33 @@
                                             <div class="listItem">
                                                 <div>
                                                     <div class="resteurantLocalization">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
                                                         <span>Placeholder localization 2</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?>" alt="phone icon">
                                                         <span>Placeholder adress 2</span>
                                                     </div>
                                                 </div>
                                             </div> <div class="listItem">
                                                 <div>
                                                     <div class="resteurantLocalization">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
                                                         <span>Placeholder localization 3</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?>" alt="phone icon">
                                                         <span>Placeholder adress 3</span>
                                                     </div>
                                                 </div>
                                             </div> <div class="listItem">
                                                 <div>
                                                     <div class="resteurantLocalization">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
                                                         <span>Placeholder localization 4</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?> alt="phone icon">
                                                         <span>Placeholder adress 4</span>
                                                     </div>
                                                 </div>
@@ -243,11 +243,11 @@
                                             <div class="listItem">
                                                 <div>
                                                     <div class="resteurantLocalization">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
                                                         <span>Placeholder localization 5</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?>" alt="phone icon">
                                                         <span>Placeholder adress 5</span>
                                                     </div>
                                                 </div>
@@ -255,11 +255,11 @@
                                             <div class="listItem">
                                                 <div>
                                                     <div class="resteurantLocalization">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
                                                         <span>Placeholder localization 6</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?>" alt="phone icon">
                                                         <span>Placeholder adress 6</span>
                                                     </div>
                                                 </div>
@@ -267,11 +267,11 @@
                                             <div class="listItem">
                                                 <div>
                                                     <div class="resteurantLocalization">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/shop_ico.png" alt="shop icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
                                                         <span>Placeholder localization 7</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/old_phone_ico.png" alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png;" ?>" alt="phone icon">
                                                         <span>Placeholder adress 7</span>
                                                     </div>
                                                 </div>
@@ -299,7 +299,16 @@
             <div id="modal">
                 <span id="modalClose">X</span>
                     <div id="modalContent">
-                        
+                        <div>   
+                            <h4>Title</h4>
+                            <arcticle>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget interdum sapien. 
+                                Mauris in augue eu nulla ullamcorper dictum. Suspendisse sollicitudin tellus at mauris finibus hendrerit. 
+                                Morbi vel sem in metus consequat varius a imperdiet urna. Cras scelerisque mauris eu erat gravida finibus.
+                                 Sed ut ligula eu diam rutrum efficitur ut id tortor. Nulla diam metus, porta id nulla id, gravida ullamcorper ex. 
+                                 Nulla facilisi. Ut varius interdum porta. 
+                            </article>
+                        <div>
                     </div>
             </div>
     </body>

@@ -73,11 +73,18 @@ window.onload = function() {
         eventTarget.classList += 'active';
     }
 
-    function openModal(eventTarget) {
+    function openModal(eventTarget, additonalData = false, ) {
         let modalElement = document.getElementById('modal')
         let targetedImage = eventTarget.cloneNode(false);
 
         document.getElementById('modalContent').appendChild(targetedImage);
+
+        if (additonalData) {
+            let modalContentDiv = document.createElement('DIV');
+            let heading = document.createElement('H4');
+            let cakeDescription = document.createElement('ARTICLE');
+        }
+
         modalElement.style.display = 'block';
     }
 

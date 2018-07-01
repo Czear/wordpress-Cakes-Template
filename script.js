@@ -1,5 +1,5 @@
 // Webpack imports
-require('./styles/style.css');
+require('./style.css');
 
 // Define helper handlerers
 currentNewsPage = document.getElementById('newsPaginationStartingPage');

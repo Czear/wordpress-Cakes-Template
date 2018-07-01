@@ -1,3 +1,13 @@
+/* 
+Theme Name: Bunch of Cakes
+Theme URI: none
+Author: Cezary Wakuliński
+Author URI: https://github.com/Czear/
+Description: Template made froms PSD file
+Version: 1.0
+Tags: PSD, webdev, cakes, icecreams
+*/
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -40,12 +50,12 @@ h4 {
 }
 
 .upTeeths {
-	background-image: url(../assets/images/teethUp.png);
+	background-image: url(./assets/images/teethUp.png);
 	margin-top: -18px;
 }
 
 .downTeeths {
-	background-image: url(../assets/images/teethDown.png);
+	background-image: url(./assets/images/teethDown.png);
 	margin-top: -5%;
 }
 

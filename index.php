@@ -3,7 +3,8 @@
     <title>Project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory') . "/style.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory') . "/distribution/minify.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory') . "/styles/unwebpack.css"; ?>">
 </head>
 <html>
     <body>
@@ -235,7 +236,7 @@
                                                         <span>Placeholder localization 4</span>
                                                     </div>
                                                     <div class="resteurantContact">
-                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?> alt="phone icon">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png"; ?>" alt="phone icon">
                                                         <span>Placeholder adress 4</span>
                                                     </div>
                                                 </div>
@@ -301,7 +302,7 @@
                     <div id="modalContent">
                         <div>   
                             <h4>Title</h4>
-                            <arcticle>
+                            <article>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget interdum sapien. 
                                 Mauris in augue eu nulla ullamcorper dictum. Suspendisse sollicitudin tellus at mauris finibus hendrerit. 
                                 Morbi vel sem in metus consequat varius a imperdiet urna. Cras scelerisque mauris eu erat gravida finibus.
@@ -312,5 +313,5 @@
                     </div>
             </div>
     </body>
-    <script src="<?php echo get_bloginfo('template_directory') .'/script.js'; ?>"></script>
+    <script src="<?php echo get_bloginfo('template_directory') .'/distribution/minify.js'; ?>"></script>
 </html>

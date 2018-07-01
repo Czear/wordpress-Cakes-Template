@@ -1,0 +1,33 @@
+{
+  "name": "bunchofcakes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "css-loader": "^0.28.11",
+    "script-loader": "^0.7.2",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Czear/wordpress-Cakes-Template.git"
+  },
+  "author": "Cezary Wakuliński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Czear/wordpress-Cakes-Template/issues"
+  },
+  "homepage": "https://github.com/Czear/wordpress-Cakes-Template#readme"
+}

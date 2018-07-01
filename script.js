@@ -1,3 +1,6 @@
+// Webpack imports
+require('./styles/style.css');
+
 // Define helper handlerers
 currentNewsPage = document.getElementById('newsPaginationStartingPage');
 currentGaleryPage = document.getElementById('galeryPaginationStartingPage');
@@ -66,7 +69,7 @@ window.onload = function() {
     function setGaleryPage(eventTarget) {
         let galeryElement = document.getElementById('galeryImages');
         let chosenPart = eventTarget.textContent - 1;
-        galeryElement.scrollTop = chosenPart * galeryElement.scrollHeight/3;
+        galeryElement.scrollLeft = chosenPart * galeryElement.scrollWidth/3;
 
         currentGaleryPage.classList = '';
         currentGaleryPage = eventTarget;
@@ -109,6 +112,5 @@ newsMessagesArray = [
 
     `Duis tellus mi, interdum id imperdiet vel, consequat eget lorem. Donec sit amet nisl fringilla,
     aliquet ex in, maximus dui. Aliquam vitae neque erat. In mattis diam vel congue volutpat. Integer 
-    velit nisl, semper id mollis in, rhoncus sit amet justo. Quisque et augue velit.Integer 
-    velit nisl, semper id mollis in, rhoncus sit amet justo. Quisque et augue velit. `
+    velit nisl, semper id mollis in, rhoncus sit amet justo. Quisque et augue velit.`
 ]

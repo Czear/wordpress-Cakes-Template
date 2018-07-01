@@ -1,13 +1,3 @@
-@font-face {
-	font-family: "Great Vibes";
-	src: url(./assets/fonts/GreatVibes-Regular.otf);
-}
-
-@font-face {
-	font-family: "Roboto";
-	src: url(./assets/fonts/Roboto-Regular.ttf);
-}
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -50,12 +40,12 @@ h4 {
 }
 
 .upTeeths {
-	background-image: url(./assets/images/teethUp.png);
+	background-image: url(../assets/images/teethUp.png);
 	margin-top: -18px;
 }
 
 .downTeeths {
-	background-image: url(./assets/images/teethDown.png);
+	background-image: url(../assets/images/teethDown.png);
 	margin-top: -5%;
 }
 
@@ -183,7 +173,6 @@ h4 {
 
 #offer {
 	width: 100%;
-	background-image: url(./assets/images/news_background.png);
 	background-size: cover;
 	padding: 5% 0 5% 0;
 }
@@ -371,6 +360,8 @@ h4 {
 }
 
 #galeryImages {
+	display:flex;
+	width:100%;
 	margin: 2%;
 	max-height: 600px;
 	overflow: hidden;
@@ -378,7 +369,7 @@ h4 {
 }
 
 .imagesBunch {
-	display: inline-block;
+	flex: 0 0 100%;
 	height: 600px;
 }
 
@@ -416,7 +407,6 @@ h4 {
 
  #localization {
 	width: 100%;
-	background-image: url(./assets/images/localization_background.png);
 	background-size: 100% 100%;
 	padding: 5% 0 5% 0;
 	color: #ffffff;
@@ -507,7 +497,6 @@ h4 {
 	padding: 4% 0 4% 0;
 	width: 100%;
 	margin: 0 auto;
-	background-image: url(./assets/images/footer_icecream_background.png);
 	background-size: cover;
 	margin-top: -1%;
 	z-index: -1;

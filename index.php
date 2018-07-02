@@ -187,7 +187,7 @@
             <section id="localization">
         <div class="teeths downTeeths"></div>
                 <div class="sectionContent">
-                    <div id="localizationSideContent">
+                    <div id="localizationContainer">
                         <h2>Nasze</h2>
                         <h4>Lokale</h4>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
@@ -277,6 +277,18 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="listItem">
+                                                <div>
+                                                    <div class="resteurantLocalization">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/shop_ico.png"; ?>" alt="shop icon">
+                                                        <span>Placeholder localization 8</span>
+                                                    </div>
+                                                    <div class="resteurantContact">
+                                                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/old_phone_ico.png;" ?>" alt="phone icon">
+                                                        <span>Placeholder adress 8</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                   <img id="lowerArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_down.png" alt="arrow Down">
@@ -299,18 +311,7 @@
         <footer>
             <div id="modal">
                 <span id="modalClose">X</span>
-                    <div id="modalContent">
-                        <div>   
-                            <h4>Title</h4>
-                            <article>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget interdum sapien. 
-                                Mauris in augue eu nulla ullamcorper dictum. Suspendisse sollicitudin tellus at mauris finibus hendrerit. 
-                                Morbi vel sem in metus consequat varius a imperdiet urna. Cras scelerisque mauris eu erat gravida finibus.
-                                 Sed ut ligula eu diam rutrum efficitur ut id tortor. Nulla diam metus, porta id nulla id, gravida ullamcorper ex. 
-                                 Nulla facilisi. Ut varius interdum porta. 
-                            </article>
-                        <div>
-                    </div>
+                    <div id="modalContent"></div>
             </div>
     </body>
     <script src="<?php echo get_bloginfo('template_directory') .'/distribution/minify.js'; ?>"></script>

@@ -90,7 +90,7 @@ h4 {
 }
 
 #mainNavigation ul, main section .sectionContent {
-	width: 50%;
+	width: 60%;
 }
 
  /* Main navigation section styles*/
@@ -152,7 +152,7 @@ h4 {
     background: #cfcfcf;
     border: 2px solid #cfcfcf;
     color: #ffffff;    
-	font: 20px Arial, sans-serif;
+	font: 18px Arial, sans-serif;
 	margin-left: 15px;
 	cursor: pointer;
 }
@@ -161,7 +161,8 @@ h4 {
 	padding: 10px;
 	border: 1px solid #000000;
 	margin-right: 8%;
-	width: 50%;
+	width: 40%;
+	height: auto;
 	max-height: 340px;
 }
 
@@ -184,7 +185,7 @@ h4 {
 #offer {
 	width: 100%;
 	background-size: cover;
-	padding: 5% 0 5% 0;
+	padding: 5% 0;
 }
 
 #offerHeading h2, #offerHeading h4{ 
@@ -253,29 +254,18 @@ h4 {
 }
 
 #secondOfferContentContainer {
-	padding: 5%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-}
-
-
-.singleProduct h6{
-	margin: 0 0 5px 0;
-	font-size: 20px;
-	letter-spacing: 1px;
-	line-height: 29px;
-	color: #3A3A3A;
-	font-family: "Roboto";
-	font-weight: 800;
+	width: auto;
 }
 
 .singleProduct {
-	margin-top: 55px;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 	width: 40%;
+	margin: 20px 5%;
 	font-size: 13px;
 	letter-spacing: 1px;
 	line-height: 17px;
@@ -284,18 +274,30 @@ h4 {
 	font-weight: 300;
 }
 
+.singleProduct h6{
+	margin: 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 29px;
+	color: #3A3A3A;
+	font-family: "Roboto";
+	font-weight: 800;
+}
+
 .singleProduct img {
 	display: inline-block;
+	width: 35%;
+	height: 90%;
 }
 
 .singleProduct div {
-	display: inline-block;
-	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	margin-left: 10px;
 }
 
 .singleProduct article {
-	font-size: 13px;
 	letter-spacing: 1px;
 	line-height: 17px;
 	color: rgb(58,58,58);
@@ -311,6 +313,7 @@ h4 {
 	line-height: 17px;
 	color: rgb(195,19,38);
 	font-family: "Roboto";
+	margin: 0;
 }
 #secondOfferContent footer{
 	display: flex;
@@ -339,6 +342,7 @@ h4 {
 #galery {
 	width: 100%;
 	margin: 4% 0 4% 0;
+	padding-bottom: 3%;
 }
 
 #galeryHeading{
@@ -373,21 +377,19 @@ h4 {
 	display:flex;
 	width:100%;
 	margin: 2%;
-	max-height: 600px;
 	overflow: hidden;
 	scroll-behavior: smooth;
 }
 
 .imagesBunch {
 	flex: 0 0 100%;
-	height: 600px;
 }
 
 #galeryImages img {
 	display: inline-block;
 	width: 45%;
-	height: 45.5%;
-	margin: 2% calc(2.5% - 5px) calc(5% - 5px) 2.5%;
+	height: 40%;
+	margin: 2% calc(2.5% - 5px) calc(10% - 5px) 2.5%;
 	margin-bottom: 5px;
 	cursor: pointer;
 }
@@ -402,13 +404,13 @@ h4 {
 
 #galeryPagination  div{
 	border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     padding: 5px;
     background: #cfcfcf;
     border: 2px solid #cfcfcf;
     color: #ffffff;    
-	font: 13px Arial, sans-serif;
+	font: 18px Arial, sans-serif;
 	margin-left: 15px;
 	cursor: pointer;
 }
@@ -417,12 +419,13 @@ h4 {
 
  #localization {
 	width: 100%;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: bottom;
 	padding: 5% 0 5% 0;
 	color: #ffffff;
 }
 
-#localizationSideContent h2, #localizationSideContent h4{
+#localizationContainer h2, #localizationContainer h4{
 	color: #ffffff !important;
 }
 
@@ -431,8 +434,9 @@ h4 {
 	padding-bottom: 10%;
 }
 
-#localizationSideContent {
+#localizationContainer {
 	width: 100%;
+	padding-top: 10%;
 	max-height: 640px;
 }
 
@@ -440,9 +444,7 @@ h4 {
 	padding: 10px;
 	border: 1px solid #ffffff;
 	margin: 4% 0 8% 0;
-	width: 50%;
-	height: 50%;
-	max-height: 400px;
+	max-height: 500px;
 }
 
 #localizationMainContent {
@@ -456,7 +458,7 @@ h4 {
 	scroll-behavior: smooth;
 	position: relative;
 	margin: 4% 0 8% 0;
-	height: 400px;
+	height: 402px;
 	width: 50%;
 	max-width: 400px;
 	margin-left: 10%;
@@ -538,9 +540,8 @@ h4 {
 #mainFooter {
 	font-family: "Roboto";
 	font-size: 12px;
-	padding: 1% 0 1% 2%;
+	padding: 12px 0 10px 12px;
 	color: #6b6a69;
-	width: 98%;
 	background-color: #000000
 }
 

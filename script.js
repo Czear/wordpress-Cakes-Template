@@ -33,11 +33,11 @@ window.onload = function() {
     });
 
     document.getElementById("upperArrow").addEventListener("click", () => {
-        document.getElementById('LocalizationsList').scrollTop -= 133;
+        document.getElementById('LocalizationsList').scrollTop -= 134;
     });
 
     document.getElementById('lowerArrow').addEventListener("click", () => {
-        document.getElementById('LocalizationsList').scrollTop += 133;
+        document.getElementById('LocalizationsList').scrollTop += 134;
     });
 
     document.getElementById('modalClose').addEventListener("click", () => {
@@ -54,7 +54,7 @@ window.onload = function() {
 
     document.getElementById('secondOfferContentContainer').addEventListener("click", (event) => {
         if (event.target.tagName === "IMG") {
-            openModal(event.target);
+            console.log(event.target);
         }
     });
 // Funtions

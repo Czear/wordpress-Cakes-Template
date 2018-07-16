@@ -20,7 +20,6 @@ header img{
 main {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 h2 {
@@ -36,7 +35,7 @@ h4 {
 	border-color: #c1a691 !important;
 }
 
-.activeNav {
+.activeNavItem {
 	color: #ffffff !important;
 	background-color: #ad8b67;
 	padding: 0.5% 5%;
@@ -63,7 +62,6 @@ h4 {
 	margin-top: -14px;
 }
 
-
 .scrollArrow {
 	float: right;
 }
@@ -89,8 +87,8 @@ h4 {
 	font-weight: bold;
 }
 
-#mainNavigation ul, main section .sectionContent {
-	width: 60%;
+main section .sectionContent {
+	width: 48%;
 }
 
  /* Main navigation section styles*/
@@ -100,14 +98,14 @@ h4 {
 	justify-content: center;
 }
 
-#mainNavigation ul{
+#mainNavigation ul {
 	display: flex;
 	list-style-type: none;
 	justify-content: center;
 	align-items: center;
 }
 
-#mainNavigation ul li{
+#mainNavigation ul li {
 	margin-left: 5%;
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -120,63 +118,70 @@ h4 {
  /* News section styles*/
 
 #news {
-	margin: 4% 0 4% 0;
+	margin: 4% 0;
 }
 
+#news .sectionContent {
+	display: flex;
+	justify-content: space-between;
+	width: 51%;
+}
 
 #newsContent {
-	position: relative;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
 	margin: 2% 0 2% 0;
+	width: 47.5%;
 }
 
-#newsHeading {
-	margin-left: 60%
-}
-
-#newsPagination{
-	display: flex;
-	list-style-type: none;
-	justify-content: flex-end;
-	align-items: center;
-	text-align: center;
-}
-
-#newsPagination div{
-	border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    background: #cfcfcf;
-    border: 2px solid #cfcfcf;
-    color: #ffffff;    
-	font: 18px Arial, sans-serif;
-	margin-left: 15px;
-	cursor: pointer;
+#newsSidePhotoContainer {
+	width: 47.5%
 }
 
 #newsSidePhoto{
 	padding: 10px;
 	border: 1px solid #000000;
-	margin-right: 8%;
-	width: 40%;
-	height: auto;
-	max-height: 340px;
+	margin-top: 160px;
+	width: 75%;
+}
+
+#newsHeading {
+	height: 150px;
 }
 
 #newsArticle {
-	width: 40%;
-	max-height: 2%;
-	overflow: hidden;
-	display: inline-block;
 	font-size: 16px;
 	letter-spacing: 1px;
 	line-height: 29px;
 	color: #38281B;
 	font-family: "Roboto";
 	font-weight: 300;
+}
+
+
+#newsPagination{
+	align-self: flex-end;
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+
+	margin-top: 8%;
+}
+
+#newsPagination div{
+	border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    padding: 5px;
+    background: #cfcfcf;
+    border: 2px solid #cfcfcf;
+    color: #ffffff;    
+	font: 14px Arial, sans-serif;
+	margin-left: 15px;
+	cursor: pointer;
 }
 
  /* Offer section styles*/
@@ -560,7 +565,7 @@ h4 {
     width: 100%; 
     height: 100%;
     overflow: auto; 
-	background-color: rgb(00, 00, 00, 0.3); 
+	background-color: rgba(0, 0, 0, 0.3); 
 }
 
 #modal span {

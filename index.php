@@ -27,23 +27,25 @@
         <main>
             <section id="news">
                 <div class="sectionContent">
-                    <div id="newsHeading">
-                        <h2>Co nowego?</h2>
-                        <h4>Aktualności</h4>
-                        <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/italian_flat_flag.png"; ?>" alt="italian Flag">
+                    <div id="newsSidePhotoContainer">
+                        <img id="newsSidePhoto" src="<?php echo get_bloginfo('template_directory') . "/assets/images/news_photo.png"; ?>" alt="side photo">
                     </div>
 
                     <div id="newsContent">
-                        <img id="newsSidePhoto" src="<?php echo get_bloginfo('template_directory') . "/assets/images/news_photo.png"; ?>" alt="side photo">
-                        <article id="newsArticle">
-                            
-                        </article>
-                    </div>  
-                    <footer id="newsPagination">
+                        <div id='newsHeading'>
+                            <h2>Co nowego?</h2>
+                            <h4>Aktualności</h4>
+                            <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/italian_flat_flag.png"; ?>" alt="italian Flag">
+                        </div>
+                           <article id="newsArticle">
+                                
+                            </article>
+                            <footer id="newsPagination">
                                 <div id="newsPaginationStartingPage">1</div>
                                 <div>2</div>
                                 <div>3</div>
-                    </footer> 
+                            </footer> 
+                    </div>  
                 </div>                    
             </section>
 
@@ -152,7 +154,7 @@
                     </div>
                     <nav id="galeryNavigation">
                         <ul>
-                            <li class="activeNav">Lody</li>
+                            <li class="activeNavItem">Lody</li>
                             <li>Ciasta</li>
                             <li>Desery</li>
                         </ul>

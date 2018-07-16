@@ -12,7 +12,7 @@ module.exports = {
     },
     module: {
         rules: [
-           {
+            {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                   fallback: 'style-loader',
@@ -20,7 +20,7 @@ module.exports = {
                     { loader: 'css-loader', options: { minimize: true } }
                 ]
                 })
-            }, 
+},
             {
                 test: /\.(png|ttf)/,
                 use: 'url-loader'

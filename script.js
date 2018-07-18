@@ -1,73 +1,83 @@
 // Webpack imports
 require('./style.css');
 
-// Define helper handlerers
-currentNewsPage = document.getElementById('newsPaginationStartingPage');
-currentGaleryPage = document.getElementById('galeryPaginationStartingPage');
-
 // OnLoad actions
 window.onload = function() {
     document.getElementById('newsArticle').innerHTML = newsMessagesArray[0];
-    currentNewsPage.classList += 'active';
-    currentGaleryPage.classList += 'active'
+    newsPaginationStartingPage.classList += 'active';
+    galeryPaginationStartingPage.classList += 'active'
   };
 
 // Event handlelers
 
-    document.getElementById('newsPagination').addEventListener("click", (event) => {
+    newsPagination.addEventListener("click", (event) => {
         if (event.target.tagName != "FOOTER") {
             setNewsPage(event.target);
         }
     });
 
-    document.getElementById('galeryPagination').addEventListener("click", (event) => {
+    navScrollList.addEventListener("click", (event) => {
+        if (event.target.tagName === "LI") {
+            let targetedSection = event.target.dataset.scrollto;
+            let scrollDimension = document.getElementById(targetedSection).offsetTop;
+
+                if (targetedSection.match("offer|localization")) {
+                    scrollDimension += 34;
+                }
+
+           document.documentElement.scrollTop += scrollDimension;
+        }
+    });
+
+    offerContent.addEventListener("click", (event) => {
+        if (event.target.tagName === "IMG") {
+            firstChoiceMenu.style.display = 'none';
+            secondChoiceMenu.style.display = 'block';
+            offer.style.backgroundImage = 'none';
+        }
+    });
+
+    secondOfferContentContainer.addEventListener("click", (event) => {
+        if (event.target.tagName === "IMG") {
+            console.log(event.target ); // To do
+        }
+    });
+
+    galeryPagination.addEventListener("click", (event) => {
         if (event.target.tagName != "FOOTER") {
             setGaleryPage(event.target)
         }
     });
 
-    document.getElementById('galeryImages').addEventListener("click", (event) => {
+    galeryImages.addEventListener("click", (event) => {
         if (event.target.tagName === "IMG") {
             openModal(event.target);
         }
     });
 
-    document.getElementById("upperArrow").addEventListener("click", () => {
-        document.getElementById('LocalizationsList').scrollTop -= 134;
+    upperArrow.addEventListener("click", () => {
+        LocalizationsList.scrollTop -= 134;
     });
 
-    document.getElementById('lowerArrow').addEventListener("click", () => {
-        document.getElementById('LocalizationsList').scrollTop += 134;
+    lowerArrow.addEventListener("click", () => {
+        LocalizationsList.scrollTop += 134;
     });
 
-    document.getElementById('modalClose').addEventListener("click", () => {
+    modalClose.addEventListener("click", () => {
         closeModal();
     });
 
-    document.getElementById('offerContent').addEventListener("click", (event) => {
-        if (event.target.tagName === "IMG") {
-            document.getElementById('firstChoiceMenu').style.display = 'none';
-            document.getElementById('secondChoiceMenu').style.display = 'block';
-            document.getElementById('offer').style.backgroundImage = 'none';
-        }
-    });
-
-    document.getElementById('secondOfferContentContainer').addEventListener("click", (event) => {
-        if (event.target.tagName === "IMG") {
-            console.log(event.target);
-        }
-    });
 // Funtions
 
     function setNewsPage(eventTarget) {
-        document.getElementById('newsArticle').innerHTML = newsMessagesArray[eventTarget.textContent-1];
+        newsArticle.innerHTML = newsMessagesArray[eventTarget.textContent-1];
         currentNewsPage.classList = '';
         currentNewsPage = eventTarget;
         eventTarget.classList += 'active';
     }
 
     function setGaleryPage(eventTarget) {
-        let galeryElement = document.getElementById('galeryImages');
+        let galeryElement = galeryImages;
         let chosenPart = eventTarget.textContent - 1;
         galeryElement.scrollLeft = chosenPart * galeryElement.scrollWidth/3;
 
@@ -76,11 +86,11 @@ window.onload = function() {
         eventTarget.classList += 'active';
     }
 
-    function openModal(eventTarget, additonalData = false, ) {
-        let modalElement = document.getElementById('modal')
+    function openModal(eventTarget, additonalData = false) /* To do */ {
+        let modalElement = modal;
         let targetedImage = eventTarget.cloneNode(false);
 
-        document.getElementById('modalContent').appendChild(targetedImage);
+        modalContent.appendChild(targetedImage);
 
         if (additonalData) {
             let modalContentDiv = document.createElement('DIV');
@@ -92,11 +102,11 @@ window.onload = function() {
     }
 
     function closeModal() {
-        var modalContent = document.getElementById("modalContent");
+        var modalContent = modalContent;
         while (modalContent.firstChild) {
             modalContent.removeChild(modalContent.firstChild);
         }
-        document.getElementById('modal').style.display = 'none';
+        modal.style.display = 'none';
     }
 
 // Fake messages from data base

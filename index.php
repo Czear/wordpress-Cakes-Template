@@ -9,15 +9,15 @@
 <html>
     <body>
         <nav id="mainNavigation">
-            <ul>
-                <li>Aktualności</li>
-                <li>Oferta</li>
-                    <li id="navLogo">
+            <ul id='navScrollList'>
+                <li data-scrollTo='news'>Aktualności</li>
+                <li data-scrollTo='offer'>Oferta</li>
+                    <li id="navLogo" data-scrollTo='top'>
                         <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/logo.png"; ?>" alt="Logo">
                     </li>
-                <li>Galeria</li>
-                <li>Lokale</li>
-                <li>Kontakt</li>
+                <li data-scrollTo='galery'>Galeria</li>
+                <li data-scrollTo='localization'>Lokale</li>
+                <li data-scrollTo='contact'>Kontakt</li>
             </ul>
         </nav>
             <header>

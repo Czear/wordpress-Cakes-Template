@@ -11,10 +11,12 @@ Tags: PSD, webdev, cakes, icecreams
 html, body {
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 header img{
 	width: 100%;
+	max-height: 20%;
 }
 
 main {
@@ -68,6 +70,7 @@ h4 {
 
 .sectionContent {
 	margin: 0 auto;
+	max-height: 100%;
 }
 
 .sectionContent > div h2 {
@@ -113,6 +116,7 @@ main section .sectionContent {
 	color: #38281B;
 	font-family: "Roboto";
 	font-weight: bold;
+	cursor: pointer;
 }
 
  /* News section styles*/
@@ -142,7 +146,7 @@ main section .sectionContent {
 #newsSidePhoto{
 	padding: 10px;
 	border: 1px solid #000000;
-	margin-top: 160px;
+	margin-top: 175px;
 	width: 75%;
 }
 
@@ -157,6 +161,8 @@ main section .sectionContent {
 	color: #38281B;
 	font-family: "Roboto";
 	font-weight: 300;
+	
+	height: 200px;
 }
 
 
@@ -450,6 +456,8 @@ main section .sectionContent {
 	border: 1px solid #ffffff;
 	margin: 4% 0 8% 0;
 	max-height: 500px;
+	width: 50%;
+	height: auto;
 }
 
 #localizationMainContent {

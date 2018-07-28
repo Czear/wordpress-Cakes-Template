@@ -38,7 +38,9 @@
                             <img src="<?php echo get_bloginfo('template_directory') . "/assets/images/italian_flat_flag.png"; ?>" alt="italian Flag">
                         </div>
                            <article id="newsArticle">
+                                <p id='newsArticleText'>
                                 
+                                </p>
                             </article>
                             <footer id="newsPagination">
                                 <div id="newsPaginationStartingPage">1</div>
@@ -193,7 +195,7 @@
                         <h2>Nasze</h2>
                         <h4>Lokale</h4>
                         <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/italian_flat_flag.png" alt="italian Flag">
-                        <img id="upperArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_up.png" alt="arrow UP">
+                        <img data-scroll='up' id="upperArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_up.png" alt="arrow UP">
                             <div id="localizationMainContent"> 
                                 <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/map.png" alt="map">            
                                         <div id="LocalizationsList">
@@ -293,7 +295,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                  <img id="lowerArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_down.png" alt="arrow Down">
+                                  <img data-scroll='down' id="lowerArrow" class="scrollArrow" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/arrow_down.png" alt="arrow Down">
                                </div>
                             </div>
                     </div>

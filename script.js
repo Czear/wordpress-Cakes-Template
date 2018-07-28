@@ -1,9 +1,14 @@
 // Webpack imports
 require('./style.css');
 
+// Helper variables
+
+currentNewsPage = newsPaginationStartingPage;
+currentGaleryPage = galeryPaginationStartingPage;
+
 // OnLoad actions
 window.onload = function() {
-    document.getElementById('newsArticle').innerHTML = newsMessagesArray[0];
+    document.getElementById('newsArticleText').innerHTML = newsMessagesArray[0];
     newsPaginationStartingPage.classList += 'active';
     galeryPaginationStartingPage.classList += 'active'
   };
@@ -55,12 +60,12 @@ window.onload = function() {
         }
     });
 
-    upperArrow.addEventListener("click", () => {
-        LocalizationsList.scrollTop -= 134;
+    upperArrow.addEventListener("click", (event) => {
+        scrollLocalizationsList(event.target.dataset.scroll);
     });
 
-    lowerArrow.addEventListener("click", () => {
-        LocalizationsList.scrollTop += 134;
+    lowerArrow.addEventListener("click", (event) => {
+        scrollLocalizationsList(event.target.dataset.scroll);
     });
 
     modalClose.addEventListener("click", () => {
@@ -70,7 +75,7 @@ window.onload = function() {
 // Funtions
 
     function setNewsPage(eventTarget) {
-        newsArticle.innerHTML = newsMessagesArray[eventTarget.textContent-1];
+        newsArticleText.innerHTML = newsMessagesArray[eventTarget.textContent-1];
         currentNewsPage.classList = '';
         currentNewsPage = eventTarget;
         eventTarget.classList += 'active';
@@ -84,6 +89,17 @@ window.onload = function() {
         currentGaleryPage.classList = '';
         currentGaleryPage = eventTarget;
         eventTarget.classList += 'active';
+    }
+
+    function scrollLocalizationsList(direction) {
+        if (direction === 'up') {
+            LocalizationsList.scrollTop -= LocalizationsList.scrollTopMax/4
+            //console.dir(LocalizationsList.scrollTopMax/4);
+        } else {
+            LocalizationsList.scrollTop += LocalizationsList.scrollTopMax/4;
+            console.dir(LocalizationsList);
+        }
+        
     }
 
     function openModal(eventTarget, additonalData = false) /* To do */ {
@@ -102,7 +118,6 @@ window.onload = function() {
     }
 
     function closeModal() {
-        var modalContent = modalContent;
         while (modalContent.firstChild) {
             modalContent.removeChild(modalContent.firstChild);
         }

@@ -481,17 +481,18 @@ main section .sectionContent {
 	flex-direction: column;
 	overflow: hidden;
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 
 #LocalizationsList > :last-child {
-	border: 0;
+	border: none;
+	flex-basis: calc(25% - 1px);
 }
 
 .listItem {
-	border-width: 0 0 1px 0;
-	border-style: solid;
-	border-color: #ffffff;
+	border: #ffffff solid;
+	border-width: 0 0 1px;
 	font-size: 11px;
 	letter-spacing: 1px;
 	line-height: 17px;
@@ -501,8 +502,9 @@ main section .sectionContent {
 	
 	display: flex;
 	flex: 0 0;
-	flex-basis: 25%;
+	flex-basis: calc(25% + 0.50px);
 	width: 100%;
+	box-sizing: border-box;
 }
 
 .listItem > div {

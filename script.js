@@ -92,14 +92,13 @@ window.onload = function() {
     }
 
     function scrollLocalizationsList(direction) {
+        let scrollDistance = LocalizationsList.offsetHeight/4;
+        console.dir(scrollDistance);
         if (direction === 'up') {
-            LocalizationsList.scrollTop -= LocalizationsList.scrollTopMax/4
-            //console.dir(LocalizationsList.scrollTopMax/4);
-        } else {
-            LocalizationsList.scrollTop += LocalizationsList.scrollTopMax/4;
-            console.dir(LocalizationsList);
+            scrollDistance *= -1;
         }
-        
+        LocalizationsList.scrollTop += scrollDistance;
+        console.dir(LocalizationsList);
     }
 
     function openModal(eventTarget, additonalData = false) /* To do */ {
